@@ -80,7 +80,7 @@ class Vehicle:
         self.ventana1.mainloop()
         
     def update_label(self,event):
-        self.environment.get_lum()
+        self.environment.set_lum(self.scale.get())
 
     def on_closing(self):
         self.ventana1.destroy()
